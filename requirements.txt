@@ -1,0 +1,26 @@
+ollama
+chromadb
+pdfplumber
+langchain
+langchain-community
+langchain-ollama
+langchain_text_splitters
+unstructured[all-docs]
+fastembed
+sentence-transformers
+elevenlabs
+streamlit
+
+# Nougat-OCR Dependencies
+nougat-ocr
+albumentations==1.0
+pydantic
+numpy
+Pillow
+
+# Torch with CUDA 11.8
+torch
+torchvision
+
+# Fix for Nougat-OCR: use transformers 4.38.2
+transformers==4.38.2

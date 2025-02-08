@@ -1,0 +1,50 @@
+2025-02-13 18:08:20,522 - INFO - Script execution finished.
+2025-02-13 18:13:46,957 - INFO - Script execution started.
+2025-02-13 18:13:46,957 - INFO - Processing file: FINE-TUNE THE ENTIRE RAG ARCHITECTURE (INCLUDING  DPR RETRIEVER) FOR QUESTION-ANSWERING.pdf
+2025-02-13 18:16:15,758 - INFO - File 'FINE-TUNE THE ENTIRE RAG ARCHITECTURE (INCLUDING  DPR RETRIEVER) FOR QUESTION-ANSWERING.pdf' successfully parsed with nougat.
+2025-02-13 18:16:15,758 - INFO - File 'FINE-TUNE THE ENTIRE RAG ARCHITECTURE (INCLUDING  DPR RETRIEVER) FOR QUESTION-ANSWERING.pdf' split into 11 chunks.
+2025-02-13 18:16:15,758 - INFO - Processing file: GFM-RAG GraphFoundation Model for Retrieval Augmented Generation.pdf
+2025-02-13 18:34:19,451 - INFO - File 'GFM-RAG GraphFoundation Model for Retrieval Augmented Generation.pdf' successfully parsed with nougat.
+2025-02-13 18:34:19,451 - INFO - File 'GFM-RAG GraphFoundation Model for Retrieval Augmented Generation.pdf' split into 98 chunks.
+2025-02-13 18:34:19,451 - INFO - Processing file: Rankify A Comprehensive Python Toolkit for Retrieval, Re-Ranking, and Retrieval-Augmented Generation.pdf
+2025-02-13 21:38:04,697 - ERROR - Nougat parsing failed for 'Rankify A Comprehensive Python Toolkit for Retrieval, Re-Ranking, and Retrieval-Augmented Generation.pdf': WARNING:root:No GPU found. Conversion on CPU is very slow.
+WARNING:root:No output directory. Output will be printed to console.
+C:\Users\alexe\Documents\Business\Weiterbildung\rag_system_pdf\venv\Lib\site-packages\torch\functional.py:539: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\TensorShape.cpp:3638.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+
+  0%|          | 0/13 [00:00<?, ?it/s]C:\Users\alexe\Documents\Business\Weiterbildung\rag_system_pdf\venv\Lib\site-packages\nougat\model.py:437: UserWarning: var(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\ReduceOps.cpp:1831.)
+  return torch.var(self.values, 1) / self.values.shape[1]
+INFO:root:Processing file data\raw\Rankify A Comprehensive Python Toolkit for Retrieval, Re-Ranking, and Retrieval-Augmented Generation.pdf with 13 pages
+
+  8%|7         | 1/13 [00:35<07:11, 35.93s/it]
+ 15%|#5        | 2/13 [01:38<09:30, 51.89s/it]
+ 23%|##3       | 3/13 [02:43<09:35, 57.53s/it]
+ 31%|###       | 4/13 [03:27<07:49, 52.20s/it]
+ 38%|###8      | 5/13 [03:56<05:50, 43.84s/it]
+ 46%|####6     | 6/13 [05:12<06:23, 54.77s/it]
+ 54%|#####3    | 7/13 [06:03<05:21, 53.57s/it]
+ 62%|######1   | 8/13 [06:36<03:55, 47.02s/it]
+ 69%|######9   | 9/13 [07:49<03:40, 55.21s/it]
+ 77%|#######6  | 10/13 [09:58<03:54, 78.11s/it]
+ 85%|########4 | 11/13 [12:06<03:06, 93.22s/it]
+ 92%|#########2| 12/13 [3:02:56<53:03, 3183.11s/it]
+ 92%|#########2| 12/13 [3:03:37<15:18, 918.11s/it] 
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\alexe\Documents\Business\Weiterbildung\rag_system_pdf\venv\Scripts\nougat.exe\__main__.py", line 7, in <module>
+  File "C:\Users\alexe\Documents\Business\Weiterbildung\rag_system_pdf\venv\Lib\site-packages\predict.py", line 204, in main
+    print(out, "\n\n")
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u0307' in position 15285: character maps to <undefined>
+
+2025-02-13 21:38:04,701 - INFO - Pulling embedding model...
+2025-02-13 21:38:05,456 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/pull "HTTP/1.1 200 OK"
+2025-02-13 21:38:05,938 - INFO - Embeddings created successfully.
+2025-02-13 21:38:09,084 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-02-13 21:38:40,377 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-02-13 21:38:40,550 - INFO - Vector database created and saved at './data/processed/chroma_db'.
+2025-02-13 21:38:40,550 - INFO - All PDF processing completed successfully.
+2025-02-13 21:38:40,565 - INFO - Script execution finished.
